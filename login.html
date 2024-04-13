@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #C9D7E5;
+	background-image: url(images/t3.jpg);
+}
+.style1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+.style2 {
+	color: #990000;
+	font-weight: bold;
+	font-size: 18px;
+}
+-->
+</style>
+<script>
+function validateForm(){
+var x=document.forms["form1"]["username"].value;
+var y=document.forms["form1"]["password"].value;
+if(x==""){
+alert("login name  cannot be blank");
+return false;
+}else if(y==""){
+alert(" password cannot be blank");
+return false;
+}else{
+return true;
+}
+
+}
+
+</script>
+
+
+</head>
+
+<body>
+<div align="center">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p class="style2">Login Page  </p>
+</div>
+<form id="form1" name="form1" method="get" action="logincode.jsp">
+  <table width="531" border="1" align="center">
+    <tr>
+      <td width="291">Enter Username/ phone number </td>
+      <td width="224"><input type="text" name="username" /></td>
+    </tr>
+    <tr>
+      <td>Enter Password </td>
+      <td><input type="password" name="password" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="Submit" value="Login" onclick="return validateForm()"/>
+      <input type="reset" name="Submit2" value="Reset" /></td>
+    </tr>
+  </table>
+  <div align="center"></div>
+</form>
+
+</body>
+</html>

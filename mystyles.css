@@ -1,0 +1,172 @@
+/* CSS Document */
+body{
+height:auto;
+	
+	
+
+}
+
+html{
+height:100%;
+
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  
+}
+
+
+
+
+
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  font-weight: bold;
+   
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width:auto;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#003399;
+  color: white;
+}
+
+
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+   border-radius: 12px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+   border-radius: 12px;
+}
+
+div.gallery img {
+   float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+   border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+   border-radius: 12px;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+   border-radius: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

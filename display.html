@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+<!--
+.style1 {font-size: 36px}
+body {
+	
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+	
+
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><body>
+
+<div align="center"><span class="style1">About Multylevel Marketing </span>
+</div>
+<div class="w3-content w3-display-container">
+<img src="images/img1.jpg" width="50%" height="300" class="mySlides" style="width:100%">
+<img src="images/img2.jpg" width="50%" height="300" class="mySlides" style="width:100%">
+<img src="images/img3.jpg"  width="50%" height="300" class="mySlides" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onClick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onClick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
